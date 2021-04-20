@@ -15,4 +15,12 @@ attr_reader :name, :food_trucks
       food_truck.name
     end
   end
+
+  def food_trucks_that_sell(item)
+    @food_trucks.map do |food_truck|
+      if food_truck.inventory[item] > 0 
+        food_truck
+      end
+    end
+  end
 end
