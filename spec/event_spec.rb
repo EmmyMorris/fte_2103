@@ -17,3 +17,4 @@ RSpec.describe Event do
       expect(event.name).to eq("South Pearl Street Farmers Market")
     end
   end
+end
