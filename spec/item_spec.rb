@@ -8,9 +8,10 @@ RSpec.describe Item do
       expect(item1).to be_instance_of(Item)
     end
 
-    it 'has attributes' do
+    xit 'has attributes' do
       item1 = Item.new({name: 'Peach Pie (Slice)', price: "$3.75"})
 
       expect().to eq()
     end
   end
+end

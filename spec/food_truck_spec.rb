@@ -3,12 +3,12 @@ require './lib/food_truck'
 RSpec.describe FoodTruck do
   describe "food_truck exists" do
     it 'exists' do
+      food_truck = FoodTruck.new("Rocky Mountain Pies")
 
-
-      expect().to be_instance_of(Foodtruck)
+      expect(food_truck).to be_instance_of(FoodTruck)
     end
 
-    it 'has attributes' do
+    xit 'has attributes' do
 
       expect().to eq()
     end
