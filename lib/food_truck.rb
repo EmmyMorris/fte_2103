@@ -11,6 +11,7 @@ class FoodTruck
   end
 
   def stock(item, inventory_amount)
-    @inventory[item] = inventory_amount
+    current_amount = @inventory[item] || 0
+    @inventory[item] = inventory_amount + current_amount
   end
 end
